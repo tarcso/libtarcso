@@ -15,6 +15,7 @@ class PushButton : public Widget
         PushButton(Window* window, int x, int y, int sx, int sy, std::string s, std::function<void()> f);
         void handle(const genv::event& ev);
         void draw() const;
+        void changefuc(std::function<void()> f);
         void unfocus();
 };
 
