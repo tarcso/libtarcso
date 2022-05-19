@@ -22,7 +22,7 @@ void PushButton::unfocus()
     m_pushed = false;
 }
 
-void PushButton::changefuc(std::function<void()> f)
+void PushButton::changefunc(std::function<void()> f)
 {
     m_func = f;
 }
