@@ -5,6 +5,7 @@
 #include "Window.hpp"
 #include "textbox.hpp"
 #include "szovegszerk.hpp"
+#include "checkbox.hpp"
 #include <vector>
 #include <fstream>
 #include <functional>
@@ -18,6 +19,7 @@ const int YY = 400;
 class Pelda: public Window
 {
     private:
+        CheckBox* ch;
 
     public:
        Pelda()
