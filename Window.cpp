@@ -31,8 +31,7 @@ void Window::event_loop() {
 
         //elozo = focus;
 
-
-        gout << move_to(0, 0) << color(0, 0, 0) << box(400, 400);
+        gout << move_to(0, 0) << color(0, 0, 0) << box(screenx, screeny);
         for (Widget * w : widgets) {
             w->draw();
         }
