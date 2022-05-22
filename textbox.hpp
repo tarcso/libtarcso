@@ -7,6 +7,7 @@ class textBox : Widget
 {
     private:
         std::string m_szov;
+        bool m_box;
     public:
         textBox(Window* window, int x, int y, int sx, int sy, std::string s);
         void handle(const genv::event& ev);
