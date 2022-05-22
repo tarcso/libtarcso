@@ -9,7 +9,7 @@ class textBox : Widget
         std::string m_szov;
         bool m_box;
     public:
-        textBox(Window* window, int x, int y, int sx, int sy, std::string s);
+        textBox(Window* window, int x, int y, int sx, int sy, std::string s, bool box);
         void handle(const genv::event& ev);
         void draw() const;
         void setText(std::string s);
