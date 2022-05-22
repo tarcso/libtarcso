@@ -11,7 +11,7 @@ void textBox::handle(const genv::event& ev)
 
 void textBox::draw() const
 {
-    if (box)
+    if (m_box)
     {
         gout << move_to(m_x, m_y) << color(255, 255, 255) << box(m_size_x, m_size_y);
         gout << move_to(m_x + 1, m_y + 1) << color(0, 0, 0) << box(m_size_x-2, m_size_y-2);
