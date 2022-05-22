@@ -92,8 +92,8 @@ void Szambeall::handle(const event& ev)
                 m_novo = false;
         }
     }
-    if(m_numb > m_max) m_numb = m_max;
-    if(m_numb < m_min) m_numb = m_min;
+    if(m_numb >= m_max) m_numb = m_max;
+    if(m_numb <= m_min) m_numb = m_min;
 }
 
 void Szambeall::draw() const
