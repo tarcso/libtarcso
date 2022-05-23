@@ -25,6 +25,7 @@ void Window::event_loop() {
             if(w->is_selected(ev.pos_x, ev.pos_y))
             {
                 focus = w;
+                break;
             }
         }
         if(focus != nullptr) focus->handle(ev);
