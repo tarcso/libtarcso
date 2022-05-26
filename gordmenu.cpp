@@ -2,7 +2,6 @@
 #include "menuelem.hpp"
 #include <cmath>
 #include <vector>
-
 using namespace genv;
 
 GordMenu::GordMenu(Window* window, int x, int y, int sx, int sy, std::string szov, std::vector<std::string> v, int darab)

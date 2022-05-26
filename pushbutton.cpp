@@ -30,6 +30,10 @@ void PushButton::changefunc(std::function<void()> f)
 void PushButton::draw() const
 {
     gout << color(255, 255, 255) << move_to(m_x, m_y) << box(m_size_x, m_size_y);
-    gout << color(0,0,0) << move_to(m_x + 1, m_y + 1) << box(m_size_x-2, m_size_y-2);
+    if(m_pushed)
+    {
+        gout << color(100,100,100) << move_to(m_x + 1, m_y + 1) << box(m_size_x-2, m_size_y-2);
+    }
+    else gout << color(80,80,80) << move_to(m_x + 1, m_y + 1) << box(m_size_x-2, m_size_y-2);
     gout << move_to(m_x + m_size_x/2.0-gout.twidth(m_szov)/2.0, m_y + m_size_y/2 - (gout.cascent()+ gout.cdescent())/2) << color(255,255,255) << text(m_szov);
 }
